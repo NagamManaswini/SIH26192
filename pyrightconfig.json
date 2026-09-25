@@ -1,0 +1,9 @@
+{
+  "extraPaths": [
+    "backend",
+    "backend/app",
+    "scripts"
+  ],
+  "reportMissingImports": false,
+  "reportMissingTypeStubs": false
+}

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="pwaMaskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="shieldMaskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Safe zone solid background for maskable -->
+  <rect width="512" height="512" fill="url(#pwaMaskGrad)" />
+  
+  <!-- Center content safely in 80% inner viewport -->
+  <g transform="translate(51, 51) scale(0.8)">
+    <!-- Mountain Silhouette -->
+    <polygon points="85,346 200,186 306,333 373,253 426,346" fill="#0369a1" opacity="0.6" />
+    <polygon points="146,346 240,213 320,346" fill="#0284c7" opacity="0.8" />
+    <polygon points="200,186 226,226 200,234 174,226" fill="#ffffff" opacity="0.9" />
+
+    <!-- Shield Base -->
+    <path d="M256 85 L384 144 V272 C384 357 256 421 256 421 C256 421 128 357 128 272 V144 Z" fill="url(#shieldMaskGrad)" stroke="#38bdf8" stroke-width="12" />
+    
+    <!-- Waves -->
+    <path d="M160 293 C186 272, 218 314, 256 293 C294 272, 326 314, 352 293 L352 314 C326 335, 294 293, 256 314 C218 335, 186 293, 160 314 Z" fill="#38bdf8" />
+    <path d="M165 253 C192 234, 224 272, 256 253 C288 234, 320 272, 347 253 L347 269 C320 288, 288 250, 256 269 C224 288, 192 250, 165 269 Z" fill="#22d3ee" opacity="0.9" />
+
+    <!-- Beacon Dot -->
+    <circle cx="256" cy="186" r="20" fill="#ef4444" stroke="#ffffff" stroke-width="5" />
+    <circle cx="256" cy="186" r="34" fill="none" stroke="#ef4444" stroke-width="4" opacity="0.75" />
+  </g>
+</svg>
